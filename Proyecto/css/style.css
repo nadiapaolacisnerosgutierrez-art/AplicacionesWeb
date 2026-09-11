@@ -1,6 +1,8 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Tint&family=Fascinate+Inline&family=Merienda:wght@300..900&family=Pompiere&display=swap');
+
 body{
-    background-color: #6fa0a7;
+    background-color: #86bbc3;
 }
 header{
     color: #0e493d;
@@ -13,10 +15,43 @@ header{
 .titulo{
     text-align: center;
     font-size: 50px;
-    color: #0e493d;
+    color: #0c1311;
+    font-family: "Bungee Tint", sans-serif;
 }
-.parrafo1{
-   text-align: justify;
+.Inicio{
+    text-align: justify;
     font-size: 20px;
-    color: #0e493d;
+    color: #000000;
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.conexiones{
+    
+    justify-content: space-between;
+    align-items: stretch;
+
+}
+
+.imagenes{
+
+     justify-content: space-between;
+    align-items: stretch;
+
+}
+.nombre{
+     justify-content: space-between;
+    font-size: 20px;
+    color: #000000;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
 }

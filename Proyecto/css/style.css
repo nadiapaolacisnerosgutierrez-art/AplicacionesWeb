@@ -1,8 +1,20 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Tint&family=Fascinate+Inline&family=Merienda:wght@300..900&family=Pompiere&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Tint&family=Fascinate+Inline&family=Merienda:wght@300..900&family=Pompiere&family=VT323&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Tint&family=Fascinate+Inline&family=Merienda:wght@300..900&family=Pompiere&family=Rubik:ital,wght@0,300..900;1,300..900&family=VT323&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Tint&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fascinate+Inline&family=Merienda:wght@300..900&family=Pompiere&family=Rubik:ital,wght@0,300..900;1,300..900&family=VT323&display=swap');
+
+
+header{
+
+    background-color: #5b067a;
+}
 
 body{
-    background-color: #86bbc3;
+    background-color: #c3a6eb;
 }
 header{
     color: #0e493d;
@@ -14,27 +26,27 @@ header{
 }
 .titulo{
     text-align: center;
-    font-size: 50px;
-    color: #0c1311;
-    font-family: "Bungee Tint", sans-serif;
+    font-size: 75px;
+    color: #22155a;
+    font-family: "VT323", monospace;
 }
 .Inicio{
     text-align: justify;
     font-size: 20px;
     color: #000000;
+    font-family: "Cormorant Garamond", serif;
 }
 
 .subtitulo{
     text-align: center;
     font-size: 30px;
-
+    color: #160a25;
 }
 
 .conexiones{
     
     justify-content: space-between;
     align-items: stretch;
-
 }
 
 .imagenes{
@@ -44,9 +56,10 @@ header{
 
 }
 .nombre{
-     justify-content: space-between;
+    
     font-size: 20px;
-    color: #000000;
+    color: #5b067a;
+     align-items: stretch;
 }
 
 div{
@@ -55,3 +68,34 @@ div{
     justify-content: space-between;
     align-items: stretch;
 }
+
+.no{
+   text-decoration: none;
+    color: rgb(27, 98, 131);
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.is{
+    text-decoration: none;
+    color: rgb(16, 85, 48);
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 30px;
+
+}
+
+.su{
+    text-decoration: none;
+    color: rgb(99, 91, 4);
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 30px;
+
+}
+
+

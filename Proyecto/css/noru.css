@@ -1,21 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fascinate+Inline&family=Merienda:wght@300..900&display=swap');
+
+
 header {
-    background-color: #6c173d;
+    background-color: #38199e;
     padding: 20px;
     text-align: center;
 }
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 3;
     padding: 0;
-     background-color: #f2c2c2;
+    background-color: #76a5ed;
 }
 .n{
 
     text-decoration: none;
-    color: rgb(75, 141, 233);
-    font-size: 20px;
-    text-align: center;
+    color: rgb(138, 185, 255);
+    font-size: 30px;
+    justify-content: center;
+
     display: inline-block;
     margin-bottom: 30px;
+}
+
+.parrafo{
+
+    text-align: justify;
+    font-size: 25px;
+    color: #060113;
+    font-family: "Cormorant Garamond", serif;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 55px;
+    color: #031227;
+    font-family: "VT323", monospace;
+    font-family: "Fascinate Inline", system-ui;
+}
+
+.imagenes{
+    display: flex;
+   flex-wrap: wrap;
+    align-items: stretch;
+   justify-content: space-between;
+   object-fit: cover;
+   
+}
+
+.imagenes img{
+    object-fit: cover;
+}
+
+footer{
+    background-color: #213245;
+    padding: 20px;
+    text-align: center;
+    color: white;
 }

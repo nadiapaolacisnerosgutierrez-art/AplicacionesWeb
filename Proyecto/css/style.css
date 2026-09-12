@@ -67,6 +67,7 @@ div{
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+    
 }
 
 .no{
@@ -98,4 +99,18 @@ div{
 
 }
 
+.con{
+    font-family: "Cormorant Garamond", serif;
+     
+  
+    
+}
 
+.ima{
+    width: 45%;
+}
+
+.contemido{
+
+    width: 25%;
+}

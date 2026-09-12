@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Tint&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fascinate+Inline&family=Merienda:wght@300..900&family=Pompiere&family=Rubik:ital,wght@0,300..900;1,300..900&family=Rye&family=VT323&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Tint&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fascinate+Inline&family=Merienda:wght@300..900&family=Pompiere&family=Rubik:ital,wght@0,300..900;1,300..900&family=Rye&family=VT323&display=swap');
+header{
+
+    background-color: #38199e;
+    padding: 20px;
+    text-align: center;
+}
+
+.inicio{
+
+    text-decoration: none;
+    color: rgb(138, 185, 255);
+    font-size: 30px;
+    justify-content: center;
+    display: inline-block;
+    margin-bottom: 30px;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #95a4bb;
+}
+
+.titulo {
+    text-align: center;
+    color: #38199e;
+    font-size: 36px;
+    margin-top: 20px;
+    font-family: "Rye", serif;
+    
+}
+
+.texto {
+    text-align: justify;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: "Merienda", sans-serif;
+    gap: 60px;
+}
+
+
+.imagenes{
+    display: flex;
+   flex-wrap: wrap;
+    align-items: stretch;
+   justify-content: space-between;
+   object-fit: cover;
+   
+}
+footer{
+    background-color: #140e32;
+    padding: 20px;
+    text-align: center;
+    color: rgb(199, 239, 203);
+}

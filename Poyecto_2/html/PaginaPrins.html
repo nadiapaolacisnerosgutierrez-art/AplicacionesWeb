@@ -3,20 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memoria del sabor</title>
-  
-  <!-- Enlace CSS de Bootstrap (el mismo de tu guía) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <meta name="description" content="Conoce la historia y las recetas de platillos tradicionales de México.">
+  <title>Memoria de Sabor | Cocina mexicana</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/interaccione.js" defer></script>
 </head>
-<body class="bg-light">
-     <header>Mi pagina</header>
-  <!-- Contenedor principal -->
-  <div class="container py-5">
+<body>
+  <header>
+    <nav class="container d-flex justify-content-between align-items-center site-nav" aria-label="Menú principal">
+      <a class="site-brand" href="PaginaPrins.html">Memoria de Sabor</a>
+      <div class="site-nav-links">
+        <a href="#sabias-que">¿Sabías que...?</a>
+        <a href="#platillos">Platillos</a>
+        <a href="#formulario">Formulario</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+  <section class="container py-5" aria-labelledby="page-title">
 
     <!-- 1. TÍTULO CENTRADO Y PÁRRAFO -->
     <div class="text-center mb-5">
-      <h1 class="display-5 fw-bold text-dark">Memoria de Sabor</h1>
-      <p class="lead text-muted mx-auto" >
+      <h1 class="display-5 fw-bold" id="page-title">Memoria de Sabor</h1>
+      <p class="lead mx-auto intro-copy">
         Más allá del sabor: los secretos de la cocina mexicana
         México es conocido por su increíble gastronomía, pero detrás de muchos de sus 
         platillos más famosos existen historias que pocos conocen. Lo que hoy disfrutamos en nuestra
@@ -34,59 +44,179 @@
     </div>
 
     <!-- 2. LAS CAJITAS (GRID DE TARJETAS) -->
+    <section id="platillos" aria-label="Platillos mexicanos">
     <div class="row g-4">
       
       <!-- Cajita 1 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body text-center p-4">
-            <h3 class="h5 fw-bold mb-3">Pozole</h3>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <article class="dish-card h-100">
+          <div class="dish-card-body text-center">
+            <h2 class="h5 fw-bold mb-3">Pozole</h2>
             
-            <a href= "Pozole.html" ><img src="../img/pozole.webp" width="500 px"></a>
+            <a href="Pozole.html"><img src="../img/pozole.webp" alt="Pozole rojo mexicano servido en un tazón"></a>
 
           </div>
-        </div>
+        </article>
       </div>
 
       <!-- Cajita 2 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body text-center p-4">
-            <h3 class="h5 fw-bold mb-3">Tamales</h3>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <article class="dish-card h-100">
+          <div class="dish-card-body text-center">
+            <h2 class="h5 fw-bold mb-3">Tamales</h2>
            
-            <a href= "Tamales.html" > <img src="../img/Tamales.webp" width="500 px"></a>
+            <a href="Tamales.html"><img src="../img/Tamales.webp" alt="Tamales mexicanos envueltos en hojas"></a>
           </div>
-        </div>
+        </article>
       </div>
 
       <!-- Cajita 3 -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body text-center p-4">
-            <h3 class="h5 fw-bold mb-3">Mole</h3>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <article class="dish-card h-100">
+          <div class="dish-card-body text-center">
+            <h2 class="h5 fw-bold mb-3">Mole</h2>
            
-            <a href= "Mole.html" > <img src="../img/mole.webp" width="500 px"> </a>
+            <a href="Mole.html"><img src="../img/mole.webp" alt="Platillo mexicano de mole servido con pollo"></a>
           </div>
-        </div>
+        </article>
       </div>
 
-       <div class="col-md-4">
-        <div class="card h-100 shadow-sm border-0">
-          <div class="card-body text-center p-4">
-            <h3 class="h5 fw-bold mb-3">Sopa azteca</h3>
-            <a href=SopaAzte.html> <img src="../img/sopaAzt.webp" width="500 px" > </a>
+       <div class="col-12 col-sm-6 col-lg-3">
+        <article class="dish-card h-100">
+          <div class="dish-card-body text-center">
+            <h2 class="h5 fw-bold mb-3">Sopa azteca</h2>
+            <a href="SopaAzte.html"><img src="../img/sopaAzt.webp" alt="Sopa azteca con tiras de tortilla"></a>
           </div>
-        </div>
+        </article>
       </div>
 
-    </div> <!-- Fin de la fila de cajitas -->
+    </div>
+    </section>
 
-  </div> <!-- Fin del contenedor -->
+    <section class="mt-5" id="sabias-que" aria-labelledby="sabias-title">
+    <h2 id="sabias-title">¿Sabías que la gastronomía de México...?</h2>
 
-  <!-- Enlace JavaScript de Bootstrap (el mismo de tu guía) -->
-  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <p>Es mucho más que comida: es un elemento vivo de identidad, cultura y
+      comunidad, reconocido como Patrimonio Cultural Inmaterial de la Humanidad
+      por la UNESCO. Su riqueza radica en una historia milenaria que entrelaza las
+      profundas tradiciones prehispánicas con las influencias europeas, asiáticas y
+      africanas que llegaron a lo largo de los siglos.
+    </p>
+     <div class="row mt-3">
+       <div class="col-12 col-md-8">
+        <article class="content-card">
+          <img src="../img/Pagprin.jpg" alt="Imagen alusiva a la gastronomía de México">
+        </article>
+      </div>
+     </div>
+    </section>
 
-  <footer>Hecho por mi</footer>
+  </section>
+  <section class="container py-5" id="formulario" aria-labelledby="form-title">
+
+    <!-- Título y Párrafo Centrados -->
+    <div class="text-center mb-5">
+      <h2 class="display-5 fw-bold" id="form-title">Formulario de reseña</h2>
+      <p class="lead text-muted mx-auto" style="max-width: 600px;">
+        Llena todos los campos a continuación para dejarnos tu opinión detallada sobre la página que creaste.
+      </p>
+    </div>
+
+    <!-- Contenedor del Formulario -->
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-7">
+        <div class="form-card">
+            <form data-review-form>
+              <!-- 1. Campo de Texto (Nombre) -->
+              <div class="mb-3">
+                <label for="nombre" class="form-label fw-bold">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej. Ana Gómez" autocomplete="name" minlength="3" required>
+              </div>
+
+              <!-- 2. Campo de Correo Electrónico con texto de ayuda -->
+              <div class="mb-3">
+                <label for="email" class="form-label fw-bold">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" autocomplete="email" required>
+                <div class="form-text">Nunca compartiremos tu información con terceros.</div>
+              </div>
+
+
+              <!-- 4. Selector Desplegable (Select) -->
+              <div class="mb-3">
+                <label for="valoracion" class="form-label fw-bold">Calificación general de la página</label>
+                <select class="form-control" id="valoracion" name="valoracion" required>
+                  <option value="" selected disabled>Elige una opción...</option>
+                  <option value="5">⭐⭐⭐⭐⭐ Excelente</option>
+                  <option value="4">⭐⭐⭐⭐ Muy buena</option>
+                  <option value="3">⭐⭐⭐ Regular</option>
+                  <option value="2">⭐⭐ Mala</option>
+                  <option value="1">⭐ Pésima</option>
+                </select>
+              </div>
+
+              <!-- 5. Área de Texto (Reseña detallada) -->
+              <div class="mb-3">
+                <label for="reseña" class="form-label fw-bold">Si hiciste algún platillo de esta pagina, ¿Cual sería tu reseña?</label>
+                <textarea class="form-control" id="reseña" name="resena" rows="4" minlength="10" placeholder="Cuéntanos qué te pareció el sitio..." required></textarea>
+              </div>
+
+              <!-- 6. Fechas y Horas -->
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="fecha" class="form-label fw-bold">Fecha de visita</label>
+                  <input type="date" class="form-control" id="fecha" name="fecha">
+                </div>
+                <div class="col-md-6 mt-3 mt-md-0">
+                  <label for="hora" class="form-label fw-bold">Hora aproximada</label>
+                  <input type="time" class="form-control" id="hora" name="hora">
+                </div>
+              </div>
+
+              <!-- 7. Selector de Color favorito para la web -->
+              <div class="mb-3">
+                <label for="colorWeb" class="form-label fw-bold">Color favorito de tu interfaz</label>
+                <input type="color" class="form-control form-control-color" id="colorWeb" name="color" value="#193c36" title="Elige un color">
+              </div>
+
+              <!-- 8. Subida de Archivos (Captura de pantalla de su página) -->
+              <div class="mb-3">
+                <label for="archivo" class="form-label fw-bold">Sube una captura de tu página (opcional)</label>
+                <input class="form-control" type="file" id="archivo" name="archivo" accept="image/*">
+              </div>
+
+              <!-- 9. Botones de Radio (Opciones únicas) -->
+              <fieldset class="mb-3">
+                <legend class="form-label fw-bold">¿Recomendarías este sitio?</legend>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="recomendar" id="radio1" value="si" checked>
+                  <label class="form-check-label" for="radio1">Sí, totalmente</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="recomendar" id="radio2" value="no">
+                  <label class="form-check-label" for="radio2">Lo dudo</label>
+                </div>
+              </fieldset>
+
+              <!-- 10. Casilla de Verificación (Checkbox) -->
+              <div class="mb-4 form-check">
+                <input type="checkbox" class="form-check-input" id="terminos" name="autorizaPublicacion">
+                <label class="form-check-label" for="terminos">Autorizo que mi reseña sea publicada en la sección principal.</label>
+              </div>
+
+              <!-- Botón de Envío -->
+              <div class="d-grid">
+                <button type="submit" class="button-primary">Validar reseña</button>
+              </div>
+              <p class="form-feedback" data-form-feedback role="status" aria-live="polite" hidden></p>
+            </form>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  </main>
+  <footer><div class="container d-flex justify-content-between align-items-center flex-wrap gap-2"><span>Hecho por mi · Memoria de Sabor</span><a href="#page-title">Volver arriba</a></div></footer>
 </body>
 
 </html>

@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    background-color: #070b12;
+    color: #e7e9e8;
+    font-family: Arial, sans-serif;
+}
+
+.pagina {
+    width: 94%;
+    margin: 38px auto;
+}
+
+header {
+    margin-bottom: 25px;
+    color: #d4f28a;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 44px;
+    font-weight: normal;
+}
+
+.introduccion {
+    max-width: 650px;
+    margin-bottom: 24px;
+    color: #929cac;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.tarjeta {
+    display: inline-block;
+    width: 23%;
+    margin: 0 0.7% 16px;
+    overflow: hidden;
+    border-radius: 13px;
+    background-color: #0e1520;
+    vertical-align: top;
+}
+
+.tarjeta img {
+    width: 100%;
+    transition: filter 0.3s ease;
+}
+
+.tarjeta img:hover {
+    filter: blur(3px);
+}
+
+.contenido {
+    padding: 14px 18px;
+}
+
+h2 {
+    margin: 4px 0 8px;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+h3 {
+    margin: 0 0 10px;
+    color: #d4f28a;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.contenido p {
+    color: #929cac;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.datos {
+    padding-top: 8px;
+    border-top: 1px solid #202a37;
+}
+
+.datos p {
+    display: inline-block;
+    width: 48%;
+    margin: 0;
+    color: #c4cbd2;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.derecha {
+    text-align: right;
+}
+
+.boton-mensaje {
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 6px;
+    background-color:#A6B2C2;
+    color: #070b12;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.mensaje {
+    display: none;
+    margin-left: 12px;
+    color: #8aeff2;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.mensaje.visible {
+    display: inline-block;
+}
+
+@media (max-width: 850px) {
+    .tarjeta {
+        width: 46%;
+    }
+}
+
+@media (max-width: 500px) {
+    .tarjeta {
+        width: 96%;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+}

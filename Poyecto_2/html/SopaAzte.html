@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memoria del sabor</title>
+    <title>Historia de la sopa azteca | Memoria de Sabor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/sopaAzte.css">
+    <script src="../js/interaccione.js" defer></script>
 </head>
-<body>
-    <header> Sopa Azteca
-        <a href="PaginaPrins.html">Volver</a>
+<body class="theme-sopa">
+    <header>
+        <nav class="container d-flex justify-content-between align-items-center site-nav" aria-label="Menú principal">
+            <a class="site-brand" href="PaginaPrins.html">Memoria de Sabor</a>
+            <div class="site-nav-links">
+                <a href="PaginaPrins.html">Inicio</a>
+                <a href="reSo.html">Receta de sopa azteca</a>
+                <a href="Form.html">Formulario</a>
+            </div>
+        </nav>
     </header>
-    <h1>Sopa Azteca</h1>
-    
-    <p>
-       La sopa azteca, también conocida popularmente como sopa de tortilla, 
-       es uno de los platillos más reconfortantes de la gastronomía mexicana 
-       y representa otra brillante fusión entre el mundo prehispánico y el español.
-       A diferencia del pozole o el mole, la sopa azteca no nació como un platillo 
-       ceremonial de la alta nobleza, sino como una ingeniosa solución casera en el día a 
-       día del México central.
-    </p>
-    <h2>Su tranformacón fue: </h2>
-    <p>Con la llegada de los españoles, los conventos católicos se convirtieron 
-        en laboratorios gastronómicos. Ahí se incorporaron ingredientes de Europa
-        y las rutas comerciales de Asia, como la manteca de cerdo, la canela, el c
-        lavo, la pimienta, la nuez, la almendra y el ajonjolí.</p>
+    <main class="container">
+        <article class="dish-hero">
+            <h1>Sopa azteca</h1>
+            <p>También conocida como sopa de tortilla, es uno de los platillos más reconfortantes de la gastronomía mexicana. Combina una base de jitomate y chile con tiras de tortilla crujientes y otros acompañamientos.</p>
+            <section aria-labelledby="transformacion">
+                <h2 id="transformacion">Una tradición casera</h2>
+                <p>La sopa de tortilla se disfruta en distintas partes del país y cada cocina le da su toque. El aguacate, el queso, la crema y el chile pasilla suelen servirse aparte para que cada persona arme su plato al gusto.</p>
+            </section>
+            <button class="button-primary mt-3" type="button" data-recipe-toggle data-recipe="reSo.html" aria-controls="recipe-panel" aria-expanded="false">Ver receta completa</button>
+        </article>
+        <section class="mt-4" id="recipe-panel" aria-label="Receta de sopa azteca" hidden>
+            <iframe class="recipe-frame" title="Receta de sopa azteca" loading="lazy"></iframe>
+        </section>
+    </main>
+    <footer><div class="container d-flex justify-content-between align-items-center flex-wrap gap-2"><span>Memoria de Sabor</span><a href="PaginaPrins.html">Volver al inicio</a></div></footer>
 </body>
 </html>

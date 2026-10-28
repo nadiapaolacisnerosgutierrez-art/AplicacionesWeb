@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  href="../css/tamales.css" rel="stylesheet">
-    <title>Memoria del sabor</title>
+    <title>Historia de los tamales | Memoria de Sabor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/tamales.css">
+    <script src="../js/interaccione.js" defer></script>
 </head>
-<body>
-    <header>Tamales
-        <a href="PaginaPrins.html">Volver</a>
+<body class="theme-tamales">
+    <header>
+        <nav class="container d-flex justify-content-between align-items-center site-nav" aria-label="Menú principal">
+            <a class="site-brand" href="PaginaPrins.html">Memoria de Sabor</a>
+            <div class="site-nav-links">
+                <a href="PaginaPrins.html">Inicio</a>
+                <a href="reTam.html">Receta de tamales</a>
+                <a href="Form.html">Formulario</a>
+            </div>
+        </nav>
     </header>
-    <h1>Tamales</h1>
-
-     <ul>
-        <li>
-            Con la llegada de los españoles en el siglo XVI, el uso de carne 
-            humana fue prohibido.
-        </li>
-        <li>
-            Los ingredientes se adaptaron utilizando carne de cerdo (cuya textura 
-            y sabor se asemejaban según los relatos de la época) y se integraron
-            nuevas especias, cebolla y ajos.
-        </li>
-        <li>
-            Con el tiempo, evolucionó hasta convertirse en un platillo tradicional 
-            y festivo en todo México, con variantes regionales como el blanco, 
-            el rojo y el verde
-        </li>
-       
-    </ul>
+    <main class="container">
+        <article class="dish-hero">
+            <h1>Historia de los tamales</h1>
+            <p>Los tamales son una preparación de origen mesoamericano, hecha con masa de maíz y cocida dentro de hojas. Su variedad refleja las tradiciones de distintas regiones de México.</p>
+            <section aria-labelledby="transformacion">
+                <h2 id="transformacion">Tradición y transformación</h2>
+                <p>Con el paso del tiempo, las recetas incorporaron ingredientes y técnicas de distintas culturas. Hoy existen tamales dulces y salados, envueltos en hojas de maíz o de plátano, y son parte de celebraciones y reuniones familiares en todo el país.</p>
+            </section>
+            <button class="button-primary mt-3" type="button" data-recipe-toggle data-recipe="reTam.html" aria-controls="recipe-panel" aria-expanded="false">Ver receta completa</button>
+        </article>
+        <section class="mt-4" id="recipe-panel" aria-label="Receta de tamales de pollo" hidden>
+            <iframe class="recipe-frame" title="Receta de tamales de pollo" loading="lazy"></iframe>
+        </section>
+    </main>
+    <footer><div class="container d-flex justify-content-between align-items-center flex-wrap gap-2"><span>Memoria de Sabor</span><a href="PaginaPrins.html">Volver al inicio</a></div></footer>
 </body>
 </html>

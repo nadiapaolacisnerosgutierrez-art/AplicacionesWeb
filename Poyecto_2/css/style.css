@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Fredoka:wght@300..700&family=Roboto+Slab:wght@100..900&family=Rye&display=swap');
+
+:root {
+  color-scheme: light;
+  --color-background: #f7f1e3;
+  --color-ink: #193c36;
+  --color-accent: #a63f2f;
+  --color-surface: #ffffff;
+  --font-body: "Fredoka", sans-serif;
+  --font-heading: "Roboto Slab", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1.5rem;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  overflow-wrap: anywhere;
+  background-color: var(--color-background);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  transition: background-color 250ms ease;
+}
+
+body.recipe-visible {
+  background-color: #e9dfca;
+}
+
+header,
+footer {
+  background-color: var(--color-ink);
+  color: var(--color-surface);
+}
+
+.site-nav {
+  min-height: 4.5rem;
+  gap: 1rem;
+}
+
+.site-brand {
+  color: var(--color-surface);
+  font-family: "Chango", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.site-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.25rem;
+}
+
+.site-nav a:not(.site-brand) {
+  color: var(--color-surface);
+  text-underline-offset: 0.2em;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: #f2c7a6;
+}
+
+main {
+  min-height: 70vh;
+  padding-top: clamp(1.5rem, 4vw, 3rem);
+  padding-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-ink);
+  font-family: var(--font-heading);
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+}
+
+h2 {
+  margin-top: 1.75rem;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.intro-copy {
+  max-width: 68rem;
+}
+
+a {
+  color: var(--color-accent);
+  text-underline-offset: 0.18em;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--color-ink);
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.content-card,
+.dish-card,
+.recipe-card,
+.form-card {
+  height: 100%;
+  border: 1px solid rgba(25, 60, 54, 0.12);
+  border-radius: 1rem;
+  background-color: var(--color-surface);
+  box-shadow: 0 0.5rem 1.5rem rgba(25, 60, 54, 0.08);
+}
+
+.content-card,
+.recipe-card,
+.form-card {
+  padding: clamp(1.1rem, 3vw, 2rem);
+}
+
+.dish-card {
+  overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.dish-card:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.75rem 1.75rem rgba(25, 60, 54, 0.15);
+}
+
+.dish-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.dish-card-body {
+  padding: 1.25rem;
+}
+
+.dish-hero {
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  border-left: 0.4rem solid var(--color-accent);
+  border-radius: 1rem;
+  background-color: var(--color-surface);
+  box-shadow: 0 0.5rem 1.5rem rgba(25, 60, 54, 0.08);
+}
+
+.button-primary,
+button.button-primary {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.15rem;
+  border: 2px solid var(--color-ink);
+  border-radius: 0.6rem;
+  background-color: var(--color-ink);
+  color: var(--color-surface);
+  font: inherit;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.button-primary:hover,
+.button-primary:focus-visible {
+  transform: translateY(-1px);
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-surface);
+}
+
+.recipe-frame {
+  width: 100%;
+  height: 72rem;
+  border: 2px solid rgba(25, 60, 54, 0.2);
+  border-radius: 1rem;
+  background-color: var(--color-surface);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+form label,
+legend {
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  max-width: 100%;
+  font: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="color"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #657a73;
+  border-radius: 0.45rem;
+  background-color: var(--color-surface);
+  color: var(--color-ink);
+}
+
+input[type="color"] {
+  width: 4.5rem;
+  padding: 0.25rem;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.form-feedback {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-left: 0.35rem solid var(--color-ink);
+  border-radius: 0.4rem;
+  background-color: var(--color-background);
+}
+
+.form-feedback.is-visible {
+  animation: feedback-appear 220ms ease-out;
+}
+
+.form-submitted {
+  box-shadow: 0 0 0 3px rgba(25, 60, 54, 0.18);
+}
+
+footer {
+  padding: 1.25rem 0;
+}
+
+@keyframes feedback-appear {
+  from {
+    opacity: 0;
+    transform: translateY(0.35rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .site-nav {
+    align-items: flex-start !important;
+    flex-direction: column;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .recipe-frame {
+    height: 68rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

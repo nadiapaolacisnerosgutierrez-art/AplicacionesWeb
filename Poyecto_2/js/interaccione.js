@@ -1,3 +1,34 @@
+const themeToggle = document.querySelector("#theme-toggle");
+let savedTheme = "light";
+
+try {
+  savedTheme = localStorage.getItem("site-theme") ?? "light";
+} catch (error) {
+  console.warn("No se pudo leer la preferencia del tema guardada.", error);
+}
+
+function applyTheme(isDark) {
+  document.body.classList.toggle("dark-mode", isDark);
+
+  if (themeToggle) {
+    themeToggle.setAttribute("aria-pressed", String(isDark));
+    themeToggle.textContent = isDark ? "Activar modo claro" : "Activar modo oscuro";
+  }
+}
+
+applyTheme(savedTheme === "dark");
+
+themeToggle?.addEventListener("click", () => {
+  const isDark = !document.body.classList.contains("dark-mode");
+  applyTheme(isDark);
+
+  try {
+    localStorage.setItem("site-theme", isDark ? "dark" : "light");
+  } catch (error) {
+    console.warn("No se pudo guardar la preferencia del tema.", error);
+  }
+});
+
 const recipeButtons = document.querySelectorAll("[data-recipe-toggle]");
 
 recipeButtons.forEach((button) => {

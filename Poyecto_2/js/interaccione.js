@@ -45,7 +45,7 @@ reviewForms.forEach((form) => {
     }
 
     feedback.textContent =
-      "¡Gracias! Tus datos se validaron en esta página. Este formulario es demostrativo y no envía información a un servidor.";
+      "¡Gracias! Por compartir tu reseña, tus datos estan seguros con nosostros";
     feedback.hidden = false;
     feedback.classList.toggle("is-visible", true);
     form.classList.add("form-submitted");

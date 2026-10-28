@@ -175,6 +175,28 @@ body.dark-mode .dish-hero {
   object-fit: cover;
 }
 
+.recipe-image {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  border: 4px solid #d5d9d2;
+  border-radius: 10px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.recipe-image:hover {
+  transform: scale(1.04);
+  border-color: #a63f2f;
+}
+
+body.dark-mode .recipe-image {
+  border-color: #657a73;
+}
+
+body.dark-mode .recipe-image:hover {
+  border-color: #f6d365;
+}
+
 .dish-card-body {
   padding: 20px;
 }
@@ -341,5 +363,9 @@ footer a:focus {
 
   .recipe-frame {
     height: 1100px;
+  }
+
+  .recipe-image:hover {
+    transform: scale(1.02);
   }
 }

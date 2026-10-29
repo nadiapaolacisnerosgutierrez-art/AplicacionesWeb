@@ -11,16 +11,16 @@ body {
 }
 
 /* Modo oscuro activado por el boton del menu */
-body.dark-mode {
+body.mole-negro {
   background-color: #151b1a;
   color: #edf5f2;
 }
 
-body.recipe-visible {
+body.birria {
   background-color: #e9dfca;
 }
 
-body.dark-mode.recipe-visible {
+body.mole-negro.birria {
   background-color: #202927;
 }
 
@@ -31,41 +31,41 @@ footer {
   color: white;
 }
 
-body.dark-mode header,
-body.dark-mode footer {
+body.mole-negro header,
+body.mole-negro footer {
   background-color: #0b1110;
   color: white;
 }
 
-.site-nav {
+.taco {
   min-height: 55px;
   gap: 16px;
 }
 
-.site-brand {
+.tortilla {
   color: white;
   font-family: "Chango", sans-serif;
   font-size: 20px;
   text-decoration: none;
 }
 
-.site-nav-links {
+.salsa {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 12px 20px;
 }
 
-.site-nav a:not(.site-brand) {
+.taco a:not(.tortilla) {
   color: white;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
+.taco a:hover,
+.taco a:focus {
   color: #f6d365;
 }
 
-.theme-toggle {
+.chile {
   padding: 8px 12px;
   border: 2px solid white;
   border-radius: 6px;
@@ -75,12 +75,12 @@ body.dark-mode footer {
   cursor: pointer;
 }
 
-.theme-toggle:hover {
+.chile:hover {
   background-color: white;
   color: #193c36;
 }
 
-body.dark-mode .theme-toggle:hover {
+body.mole-negro .chile:hover {
   border-color: #f6d365;
   background-color: #f6d365;
   color: #151b1a;
@@ -100,10 +100,10 @@ h4 {
   font-family: "Roboto Slab", serif;
 }
 
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4 {
+body.mole-negro h1,
+body.mole-negro h2,
+body.mole-negro h3,
+body.mole-negro h4 {
   color: #edf5f2;
 }
 
@@ -116,16 +116,16 @@ h2 {
   font-size: 30px;
 }
 
-.site-brand,
-.recipe-card h1 {
+.tortilla,
+.enchilada h1 {
   font-family: "Chango", "Rye", serif;
 }
 
-.dish-hero h1 {
+.huarache h1 {
   font-family: "Rye", "Roboto Slab", serif;
 }
 
-.intro-copy {
+.guacamole {
   max-width: 1000px;
 }
 
@@ -133,7 +133,7 @@ a {
   color: #873426;
 }
 
-body.dark-mode a {
+body.mole-negro a {
   color: #f6d365;
 }
 
@@ -143,11 +143,11 @@ img {
   height: auto;
 }
 
-.content-card,
-.dish-card,
-.recipe-card,
-.form-card,
-.dish-hero {
+.tostada,
+.quesadilla,
+.enchilada,
+.chilaquiles,
+.huarache {
   height: 100%;
   padding: 24px;
   border: 1px solid #d5d9d2;
@@ -155,27 +155,27 @@ img {
   background-color: white;
 }
 
-body.dark-mode .content-card,
-body.dark-mode .dish-card,
-body.dark-mode .recipe-card,
-body.dark-mode .form-card,
-body.dark-mode .dish-hero {
+body.mole-negro .tostada,
+body.mole-negro .quesadilla,
+body.mole-negro .enchilada,
+body.mole-negro .chilaquiles,
+body.mole-negro .huarache {
   border-color: #46534e;
   background-color: #242d2a;
   color: #edf5f2;
 }
 
-.dish-card {
+.quesadilla {
   overflow: hidden;
 }
 
-.dish-card img {
+.quesadilla img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.recipe-image {
+.gordita {
   width: 100%;
   max-width: 500px;
   margin: 20px auto;
@@ -184,32 +184,32 @@ body.dark-mode .dish-hero {
   transition: transform 0.3s, border-color 0.3s;
 }
 
-.recipe-image:hover {
+.gordita:hover {
   transform: scale(1.04);
   border-color: #a63f2f;
 }
 
-body.dark-mode .recipe-image {
+body.mole-negro .gordita {
   border-color: #657a73;
 }
 
-body.dark-mode .recipe-image:hover {
+body.mole-negro .gordita:hover {
   border-color: #f6d365;
 }
 
-.dish-card-body {
+.tinga {
   padding: 20px;
 }
 
-.dish-hero {
+.huarache {
   border-left: 6px solid #a63f2f;
 }
 
-body.dark-mode .dish-hero {
+body.mole-negro .huarache {
   border-left-color: #f6d365;
 }
 
-.button-primary {
+.tamal {
   display: inline-block;
   padding: 10px 18px;
   border: 2px solid #193c36;
@@ -222,20 +222,20 @@ body.dark-mode .dish-hero {
   cursor: pointer;
 }
 
-.button-primary:hover,
-.button-primary:focus {
+.tamal:hover,
+.tamal:focus {
   border-color: #a63f2f;
   background-color: #a63f2f;
   color: white;
 }
 
-body.dark-mode .button-primary {
+body.mole-negro .tamal {
   border-color: #f6d365;
   background-color: #f6d365;
   color: #151b1a;
 }
 
-.recipe-frame {
+.atole {
   width: 100%;
   height: 1150px;
   border: 2px solid #d5d9d2;
@@ -279,20 +279,20 @@ textarea {
   min-height: 130px;
 }
 
-body.dark-mode input,
-body.dark-mode select,
-body.dark-mode textarea {
+body.mole-negro input,
+body.mole-negro select,
+body.mole-negro textarea {
   border-color: #889b94;
   background-color: #242d2a;
   color: #edf5f2;
 }
 
-body.dark-mode input::placeholder,
-body.dark-mode textarea::placeholder {
+body.mole-negro input::placeholder,
+body.mole-negro textarea::placeholder {
   color: #c5d0cb;
 }
 
-body.dark-mode .text-muted {
+body.mole-negro .text-muted {
   color: #c5d0cb !important;
 }
 
@@ -305,15 +305,15 @@ a:focus {
   outline-offset: 3px;
 }
 
-body.dark-mode input:focus,
-body.dark-mode select:focus,
-body.dark-mode textarea:focus,
-body.dark-mode button:focus,
-body.dark-mode a:focus {
+body.mole-negro input:focus,
+body.mole-negro select:focus,
+body.mole-negro textarea:focus,
+body.mole-negro button:focus,
+body.mole-negro a:focus {
   outline-color: #f6d365;
 }
 
-.form-feedback {
+.esquite {
   margin-top: 16px;
   padding: 12px;
   border-left: 5px solid #193c36;
@@ -321,7 +321,7 @@ body.dark-mode a:focus {
   background-color: #f7f1e3;
 }
 
-.form-submitted {
+.elote {
   border-color: #193c36;
 }
 
@@ -341,7 +341,7 @@ footer a:focus {
 
 /* Ajustes para celulares */
 @media (max-width: 575px) {
-  .site-nav {
+  .taco {
     align-items: flex-start !important;
     flex-direction: column;
   }
@@ -354,18 +354,18 @@ footer a:focus {
     font-size: 26px;
   }
 
-  .content-card,
-  .recipe-card,
-  .form-card,
-  .dish-hero {
+  .tostada,
+  .enchilada,
+  .chilaquiles,
+  .huarache {
     padding: 18px;
   }
 
-  .recipe-frame {
+  .atole {
     height: 1100px;
   }
 
-  .recipe-image:hover {
+  .gordita:hover {
     transform: scale(1.02);
   }
 }

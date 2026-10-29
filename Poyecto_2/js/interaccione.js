@@ -8,7 +8,7 @@ try {
 }
 
 function applyTheme(isDark) {
-  document.body.classList.toggle("dark-mode", isDark);
+  document.body.classList.toggle("mole-negro", isDark);
 
   if (themeToggle) {
     themeToggle.setAttribute("aria-pressed", String(isDark));
@@ -19,7 +19,7 @@ function applyTheme(isDark) {
 applyTheme(savedTheme === "dark");
 
 themeToggle?.addEventListener("click", () => {
-  const isDark = !document.body.classList.contains("dark-mode");
+  const isDark = !document.body.classList.contains("mole-negro");
   applyTheme(isDark);
 
   try {
@@ -48,7 +48,7 @@ recipeButtons.forEach((button) => {
     }
 
     panel.hidden = !isOpening;
-    document.body.classList.toggle("recipe-visible", isOpening);
+    document.body.classList.toggle("birria", isOpening);
     button.setAttribute("aria-expanded", String(isOpening));
     button.textContent = isOpening ? "Ocultar receta" : "Ver receta completa";
 
@@ -78,13 +78,13 @@ reviewForms.forEach((form) => {
     feedback.textContent =
       "¡Gracias! Por compartir tu reseña, tus datos estan seguros con nosostros";
     feedback.hidden = false;
-    feedback.classList.toggle("is-visible", true);
-    form.classList.add("form-submitted");
+    feedback.classList.toggle("sope", true);
+    form.classList.add("elote");
   });
 
   form.addEventListener("input", () => {
     feedback.hidden = true;
-    feedback.classList.remove("is-visible");
-    form.classList.remove("form-submitted");
+    feedback.classList.remove("sope");
+    form.classList.remove("elote");
   });
 });

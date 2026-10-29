@@ -39,7 +39,10 @@ body.mole-negro footer {
 
 .taco {
   min-height: 55px;
-  gap: 16px;
+}
+
+.tortilla {
+  margin-right: 16px;
 }
 
 .tortilla {
@@ -53,7 +56,11 @@ body.mole-negro footer {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 12px 20px;
+  margin: -6px -10px;
+}
+
+.salsa > * {
+  margin: 6px 10px;
 }
 
 .taco a:not(.tortilla) {
@@ -344,6 +351,11 @@ footer a:focus {
   .taco {
     align-items: flex-start !important;
     flex-direction: column;
+  }
+
+  .tortilla {
+    margin-right: 0;
+    margin-bottom: 16px;
   }
 
   h1 {
